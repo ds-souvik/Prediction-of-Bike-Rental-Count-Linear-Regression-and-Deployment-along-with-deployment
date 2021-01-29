@@ -1,9 +1,11 @@
 import numpy as np
+import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle
+import model
 
 app= Flask(__name__)
-model=pickle.load(open('model.pkl', 'rb'))
+my_model=pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -11,12 +13,25 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    int_features= [float(i) for i in request.form.values()]
-    final_features=[np.array(int_features)]
-    prediction= model.predict(final_features)
 
+    input_values = [float(i) for i in request.form.values()]  #fetching the input values
+    df_row=[[i] for i in input_values]                        #This will form the input row
+    df_keys = [i for i in request.form.keys()]    #fetching the input keys
+    rescaling_cols=['temp', 'hum', 'windspeed']          #declaring list of keys which has to be rescaled
+
+    #Declaring dictionary to convert into dataframe in the next step.
+    df_dict = {df_keys[i]: df_row[i] for i in range(len(df_keys))}
+
+    df=pd.DataFrame(df_dict)
+    df[df.columns[df.columns.isin(rescaling_cols)]] = model.scaler.transform(df[df.columns[df.columns.isin(rescaling_cols)]])
+
+    #Prediction of the trained model
+    prediction= my_model.predict(df)
+
+    #Output derived from the ML model
     output= round(prediction[0], 2)
 
+    #Output sent to the html page
     return render_template('index.html', prediction_text='Number of cycles used: {}'.format(output))
 
 if __name__=="__main__":
