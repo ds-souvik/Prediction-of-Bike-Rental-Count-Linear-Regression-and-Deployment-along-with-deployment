@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='img/cycle3.jpg') }});
+            background-size: cover;
+        }
+
+        a:link {
+              color: blue;
+              background-color: transparent;
+              text-decoration: none;
+                }
+
+        a:visited {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+                }
+
+        a:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+                }
+
+        a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+                }
+
+        .media{
+            position: absolute;
+            top: 10%
+            left: 50%;
+            transform: translate(83%, 35%);
+        }
+
+        li{
+            list-style: none;
+            margin: 10px 30px;
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px 20px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            transition: .5s;
+            }
+
+        li:hover {
+            color: #292929;
+            border: 4px solid #292929;
+            transition: .5s;
+        }
+
+    </style>
+    <title>Boom Bikes Home Page</title>
+    
+</head>
+
+<body>
+
+<div class="about-section">
+    <center><h1 style="color:black">Boom-Bikes Bike Rental.</h1></center>
+    <center><h3><font color="black"><i>The best two-wheelers for you.</i></font></h3></center>
+    <center><p><h3><font color="black">Boom-Bikes is here to redefine the way you travel! Rent a bike on an hourly, daily, weekly or even a monthly basis.</font></h3></p></center>
+    <center><p><h3><font color="black">We also have long term leasing solutions for businesses who are into last mile delivery through two wheelers.</font></h3></p></center>
+    <center><p><h3><font color="black">Along with that we are planning to expand Boom-Bikes to different countries and are looking for partners.</font></h3></p></center>
+    <center><p><h2><font color="black"><a href="index">Click here to look at the numbers our business gets.</a></font></h2></p></center>
+    <br></br>
+
+</div>
+
+<div class="wrapper">
+<center><h1><font color="black">Data Scientist and Developer</font></h1></body></center>
+<center><h1><font color="black">Souvik Ganguly</font></h1></center>
+<center><img src="{{ url_for('static', filename='img/me3.jpg') }}" alt="Souvik" width="550" height="700"></center>
+    <div class="media">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/souvik-ganguly-4a9924105/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/comicsouvik"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/ds-souvik"><i class="fa fa-github"></i></a></li>
+            <li><a href="mailto:souvik.ganguly.ds@gmail.com?subject=Hey Buddy&body=Hi Souvik, %0D%0D                                                 %0D%0DSincerely,%0D"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+      
+        
+      
+ 
+</body>
+</html>

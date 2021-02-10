@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            background-image: url({{ url_for('static', filename='img/cycle.jpg') }});
+            background-image: url({{ url_for('static', filename='img/cycle3.jpg') }});
             background-size: cover;
         }
 
@@ -29,6 +29,12 @@
             width: 300px
         }
 
+        label:hover{
+            color: red;
+              background-color: transparent;
+              text-decoration: underline;
+        }
+
 
     </style>
     <title>Boom Bikes - API</title>
@@ -36,9 +42,11 @@
 
 <body>
  <div class="login">
-	<center><h1 style="color:white">Predict Salary Analysis</h1></center>
+	<center><h1 style="color:black">Boom-Bikes Bike Rentals.</h1></center>
+    <center><h3><font color="black"><i>The best two-wheelers for you.</i></font></h3></center>
 
      <!-- Main Input For Receiving Query to our ML -->
+     <br></br>
     <form action="{{ url_for('predict')}}"method="post">
         <b><label for="best">Is it Clear, Few clouds, Partly cloudy, Partly cloudy?</label></b>
         <input type="text" id="best" name="Best", required="required", placeholder="1 or 0">
@@ -90,7 +98,7 @@
 
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-        <h1><b><center><font color="brown" size="7">{{ prediction_text }}</font></center></b></h1>
+        <h1><b><center><font color="white" size="7">{{ prediction_text }}</font></center></b></h1>
     </form>
      <br>
    
