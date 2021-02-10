@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url({{ url_for('static', filename='img/cycle.jpg') }});
+            background-size: cover;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        input{
+            width: 10%
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            width: 10%
+        }
+
+        label{
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            text-align: right;
+            width: 300px
+        }
+
+
+    </style>
     <title>Boom Bikes - API</title>
-    <link href=https:'https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+	<center><h1 style="color:white">Predict Salary Analysis</h1></center>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Best" placeholder="Best" required="required" />
-        <input type="text" name="Neutral" placeholder="Neutral" required="required" />
-		<input type="text" name="spring" placeholder="spring" required="required" />
-        <input type="text" name="temp" placeholder="temp" required="required" />
-        <input type="text" name="winter" placeholder="winter" required="required" />
-        <input type="text" name="summer" placeholder="summer" required="required" />
-        <input type="text" name="hum" placeholder="hum" required="required" />
-        <input type="text" name="jul" placeholder="jul" required="required" />
-        <input type="text" name="Sep" placeholder="Sep" required="required" />
-        <input type="text" name="windspeed" placeholder="windspeed" required="required" />
-        <input type="text" name="yr" placeholder="yr" required="required" />
-        <input type="text" name="holiday" placeholder="holiday" required="required" />
+        <b><label for="best">Is it Clear, Few clouds, Partly cloudy, Partly cloudy?</label></b>
+        <input type="text" id="best" name="Best", required="required", placeholder="1 or 0">
+        <br></br>
+
+        <b><label for="neutral">Is it Mist, Cloudy, Mist or Broken clouds?</label></b>
+        <input type="text" id="neutral" name="Neutral", required="required", placeholder="1 or 0">
+        <br></br>
+
+        <b><label for="spring">Is it spring?</label></b>
+        <input type="text" id="spring" name="spring", required="required", placeholder="1 or 0">
+        <br></br>
+
+        <b><label for="temperature">What is the temperature?</label></b>
+        <input type="text" id="temperature" name="temp", required="required", placeholder="Temperature">
+        <br></br>
+
+        <b><label for="winter">Is it winter?</label></b>
+        <input type="text" id="winter" name="winter", required="required", placeholder="1 or 0">
+        <br></br>
+
+        <b><label for="summer">Is it Summer?</label></b>
+        <input type="text" id="summer" name="summer", required="required", placeholder="1 or 0">
+        <br></br>
+
+        <b><label for="humidity">Mention Humidity</label></b>
+        <input type="text" id="humidity" name="hum", required="required", placeholder="Humidity">
+        <br></br>
+
+        <b><label for="july">Is it July?</label></b>
+        <input type="text" id="july" name="jul", required="required", placeholder="1 or 0">
+        <br></br>        
+
+        <b><label for="september">Is it September?</label></b>
+        <input type="text" id="september" name="Sep", required="required", placeholder="1 or 0">
+        <br></br>  
+
+        <b><label for="Windspeed">Mention Windspeed</label></b>
+        <input type="text" id="Windspeed" name="windspeed", required="required", placeholder="Windspeed">
+        <br></br>
+
+        <b><label for="year">2018 or 2019?</label></b>
+        <input type="text" id="year" name="yr", required="required", placeholder="0 if 2018 or 1">
+        <br></br>
+
+        <b><label for="holiday">Is it holiday?</label></b>
+        <input type="text" id="holiday" name="holiday", required="required", placeholder="1 or 0">
+        <br></br>
+
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <h1><b><center><font color="brown" size="7">{{ prediction_text }}</font></center></b></h1>
     </form>
      <br>
-   <br>
-   {{ prediction_text }}
+   
 
     </div>
 </body>

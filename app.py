@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import model
 
-app= Flask(__name__)
+app= Flask(__name__, static_url_path='/static')
 my_model=pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
@@ -27,7 +27,6 @@ def predict():
 
     #Prediction of the trained model
     prediction= my_model.predict(df)
-
     #Output derived from the ML model
     output= round(prediction[0], 2)
 

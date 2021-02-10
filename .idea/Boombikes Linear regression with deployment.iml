@@ -4,5 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Python-Step-by-Step" />
+    <orderEntry type="module" module-name="Numpy, Pandas, Visualization" />
   </component>
 </module>
