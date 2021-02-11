@@ -48,7 +48,7 @@ Basic flow of the app:
 </ol>
 
 ### Type of Cloud service used for this project is Platform As A Service(PAAS)- Heroku.
-Click here to read the document where I have shown the steps I followed for deployment.
+<a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/Heroku%20deployment.docx">Click here</a> to read the document where I have shown the steps I followed for deployment.
 
 ## Technologies and IDEs Used.
 
