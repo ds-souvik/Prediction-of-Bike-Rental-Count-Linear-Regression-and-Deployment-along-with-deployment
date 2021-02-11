@@ -25,16 +25,16 @@
 <ol type="1">
 <li> Data: day.csv</li>
 <li><a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb:</a>The notebook is divided into 3 parts
-	</li>
-	</ol>
-	<ol type="1"></ol>
+	<ul>
 	<li>Data understanding and Data cleaning.</li>
 	<li>Detailed EDA and inferences in every step.</li>
 	<li>Data Preparation for modelling.</li>
 	<li>Training the model.</li>
 	<li>Model Evaluation: p-value, VIF, r-squared, adjusted r squared, residual analysis.</li>
 	<li>Hyper parameter tuning.</li>
-	<li>Prediction and inferences.</li>
+	<li>Prediction and inferences.</li></ul>
+</li>
+</ol>
 
 <h4>Part 2: Deployment.</h4>
 <ol type="1">
