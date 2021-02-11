@@ -27,10 +27,11 @@
 <li><a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a></li>
 </ol>
 The notebook is divided into 3 parts:<br>
-	- Data understanding and Data cleaning.<br>
-	- Detailed EDA and inferences in every step.<br>
-	- Data Preparation for modelling.<br>
-	- Training the model.<br>
+
+	- Data understanding and Data cleaning.
+	- Detailed EDA and inferences in every step.
+	- Data Preparation for modelling.
+	- Training the model.
 	- Model Evaluation: p-value, VIF, r-squared, adjusted r squared, residual analysis.<br>
 	- Hyper parameter tuning.<br>
 	- Prediction and inferences.<br>
