@@ -22,8 +22,10 @@
 <center><h1 align="center">Components of the project.</h1></center>
 <h3>Project is divided into 2 parts:</h3>
 <h4>Part 1: Building Machine Learning Model and Prediction.</h4>
-1. Data: day.csv<br>
-2. <a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a><br>
+<ol type="1">
+<li> Data: day.csv</li>
+<li><a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a></li>
+</ol>
 The notebook is divided into 3 parts:<br>
 	- Data understanding and Data cleaning.<br>
 	- Detailed EDA and inferences in every step.<br>
