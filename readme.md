@@ -47,6 +47,9 @@ Basic flow of the app:
 	<li>App routing: App routing is used to map the specific URL with the associated function that is intended to perform some task. @app.route('/') is used to access apply function home() in it. It executes the frontend using home.html which inside it has an href to execute 'index' on click to use funtion predictionpage() from the app. Function predictionpage() opens our prediction page index.html. Clicking on predict button after giving correct inputs to the fields executes the function predict() which fetches data from the front-end, scales the required fields, performs prediction using the my_model object, formats the output and sends the predicted text to the front-end. </li>
 </ol>
 
+### Type of Cloud service used for this project is Platform As A Service(PAAS)- Heroku.
+Click here to read the document where I have shown the steps I followed for deployment.
+
 ## Technologies and IDEs Used.
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
