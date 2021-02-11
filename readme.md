@@ -53,5 +53,5 @@ Basic flow of the app:
 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Heroku_logo.png" width="220" height="73">](https://en.wikipedia.org/wiki/Heroku) 
 
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" width="250" height="290">](https://en.wikipedia.org/wiki/Project_Jupyter)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" width="150" height="170">](https://en.wikipedia.org/wiki/Project_Jupyter)
 
