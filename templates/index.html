@@ -15,6 +15,10 @@
             width: 10%
         }
 
+        select{
+            width: 10%
+        }
+
         button{
             background-color: green;
             color: white;
@@ -46,18 +50,26 @@
     <center><h3><font color="black"><i>The best two-wheelers for you.</i></font></h3></center>
 
      <!-- Main Input For Receiving Query to our ML -->
-     <br></br>
     <form action="{{ url_for('predict')}}"method="post">
         <b><label for="best">Is it Clear, Few clouds, Partly cloudy, Partly cloudy?</label></b>
-        <input type="text" id="best" name="Best", required="required", placeholder="1 or 0">
+        <select id="best" name="Best">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
         <b><label for="neutral">Is it Mist, Cloudy, Mist or Broken clouds?</label></b>
-        <input type="text" id="neutral" name="Neutral", required="required", placeholder="1 or 0">
+        <select id="neutral" name="Neutral">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
         <b><label for="spring">Is it spring?</label></b>
-        <input type="text" id="spring" name="spring", required="required", placeholder="1 or 0">
+        <select id="spring" name="spring">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
         <b><label for="temperature">What is the temperature?</label></b>
@@ -65,11 +77,17 @@
         <br></br>
 
         <b><label for="winter">Is it winter?</label></b>
-        <input type="text" id="winter" name="winter", required="required", placeholder="1 or 0">
+        <select id="winter" name="winter">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
         <b><label for="summer">Is it Summer?</label></b>
-        <input type="text" id="summer" name="summer", required="required", placeholder="1 or 0">
+        <select id="summer" name="summer">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
         <b><label for="humidity">Mention Humidity</label></b>
@@ -77,11 +95,17 @@
         <br></br>
 
         <b><label for="july">Is it July?</label></b>
-        <input type="text" id="july" name="jul", required="required", placeholder="1 or 0">
+        <select id="july" name="jul">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>        
 
         <b><label for="september">Is it September?</label></b>
-        <input type="text" id="september" name="Sep", required="required", placeholder="1 or 0">
+        <select id="september" name="Sep">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>  
 
         <b><label for="Windspeed">Mention Windspeed</label></b>
@@ -89,11 +113,17 @@
         <br></br>
 
         <b><label for="year">2018 or 2019?</label></b>
-        <input type="text" id="year" name="yr", required="required", placeholder="0 if 2018 or 1">
+        <select id="year" name="yr">
+            <option value="1">2019</option>
+            <option value="0">2018</option>
+        </select>
         <br></br>
 
         <b><label for="holiday">Is it holiday?</label></b>
-        <input type="text" id="holiday" name="holiday", required="required", placeholder="1 or 0">
+        <select id="holiday" name="holiday">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br></br>
 
 
