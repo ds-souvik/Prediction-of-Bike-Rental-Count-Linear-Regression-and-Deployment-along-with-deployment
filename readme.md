@@ -25,14 +25,14 @@
 1. Data: day.csv<br>
 2. <a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a><br>
 The notebook is divided into 3 parts:<br>
-	- Data understanding and Data cleaning.
-	- Detailed EDA and inferences in every step.
-	- Data Preparation for modelling.
-	- Training the model.
-	- Model Evaluation: p-value, VIF, r-squared, adjusted r squared, residual analysis.
-	- Hyper parameter tuning.
-	- Prediction and inferences.
+	- Data understanding and Data cleaning.<br>
+	- Detailed EDA and inferences in every step.<br>
+	- Data Preparation for modelling.<br>
+	- Training the model.<br>
+	- Model Evaluation: p-value, VIF, r-squared, adjusted r squared, residual analysis.<br>
+	- Hyper parameter tuning.<br>
+	- Prediction and inferences.<br>
 <h4>Part 2: Deployment.</h4>
 1. model.py: It mostly is the subpart of Boombikes Prediction model.ipynb having the code where model is built and trained. At the end the object of the trained model is saved in the memory of a pickle package.<br>
-2. app.py: It contains the code of my flask app. Flask is a micro web framework written in Python. 
+2. app.py: It contains the code of my flask app. Flask is a micro web framework written in Python.<br>
 Basic flow of the app:
