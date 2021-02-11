@@ -10,5 +10,5 @@
 
 <center><h2>Below is the preview of the app</h2></center>
 <div align="center">
-    <img src="/static/homepage.jpg" width="400px"</img> 
+    <img src="/static/img/homepage.jpg" width="400px"</img> 
 </div>
