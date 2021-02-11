@@ -58,3 +58,6 @@ Basic flow of the app:
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png" width="88" height="100">](https://en.wikipedia.org/wiki/Project_Jupyter) [<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Sublime_Text_3_logo.png/150px-Sublime_Text_3_logo.png" width="100" height="100">](https://en.wikipedia.org/wiki/Sublime_Text)[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/64px-PyCharm_Logo.svg.png" width="100" height="100">](https://en.wikipedia.org/wiki/PyCharm)
 
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
