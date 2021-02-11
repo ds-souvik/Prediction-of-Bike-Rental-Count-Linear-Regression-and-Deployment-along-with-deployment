@@ -47,9 +47,11 @@ Basic flow of the app:
 	<li>App routing: App routing is used to map the specific URL with the associated function that is intended to perform some task. @app.route('/') is used to access apply function home() in it. It executes the frontend using home.html which inside it has an href to execute 'index' on click to use funtion predictionpage() from the app. Function predictionpage() opens our prediction page index.html. Clicking on predict button after giving correct inputs to the fields executes the function predict() which fetches data from the front-end, scales the required fields, performs prediction using the my_model object, formats the output and sends the predicted text to the front-end. </li>
 </ol>
 
-## Technologies Used.
+## Technologies and IDEs Used.
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Heroku_logo.png" width="220" height="73">](https://en.wikipedia.org/wiki/Heroku) 
+
+[<img src="https://assets/main-logo.svg">](https://jupyter.org/)
 
