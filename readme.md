@@ -24,9 +24,8 @@
 <h4>Part 1: Building Machine Learning Model and Prediction.</h4>
 <ol type="1">
 <li> Data: day.csv</li>
-<li><a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a></li>
-</ol>
-The notebook is divided into 3 parts:<br>
+<li><a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb: The notebook is divided into 3 parts</a>
+
 
 	- Data understanding and Data cleaning.
 	- Detailed EDA and inferences in every step.
@@ -35,7 +34,11 @@ The notebook is divided into 3 parts:<br>
 	- Model Evaluation: p-value, VIF, r-squared, adjusted r squared, residual analysis.<br>
 	- Hyper parameter tuning.<br>
 	- Prediction and inferences.<br>
+</li>
+	</ol>
 <h4>Part 2: Deployment.</h4>
-1. model.py: It mostly is the subpart of Boombikes Prediction model.ipynb having the code where model is built and trained. At the end the object of the trained model is saved in the memory of a pickle package.<br>
-2. app.py: It contains the code of my flask app. Flask is a micro web framework written in Python.<br>
+<ol type="1">
+<li>model.py: It mostly is the subpart of Boombikes Prediction model.ipynb having the code where model is built and trained. At the end the object of the trained model is saved in the memory of a pickle package.</li>
+<li>app.py: It contains the code of my flask app. Flask is a micro web framework written in Python.</li>
 Basic flow of the app:
+</ol>
