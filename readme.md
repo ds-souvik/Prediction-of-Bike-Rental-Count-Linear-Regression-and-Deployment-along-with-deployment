@@ -22,9 +22,9 @@
 <center><h1 align="center">Components of the project.</h1></center>
 <h3>Project is divided into 2 parts:</h3>
 <h4>Part 1: Building Machine Learning Model and Prediction.</h4>
-1. Data: day.csv.
-2. <a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a>
-The notebook is divided into 3 parts:
+1. Data: day.csv<br>
+2. <a href="https://github.com/ds-souvik/Prediction-of-Bike-Rental-Count-Linear-Regression-and-Deployment-along-with-deployment/blob/master/BoomBikes%20Prediction%20model.ipynb">Boombikes Prediction model.ipynb.</a><br>
+The notebook is divided into 3 parts:<br>
 	- Data understanding and Data cleaning.
 	- Detailed EDA and inferences in every step.
 	- Data Preparation for modelling.
@@ -33,6 +33,6 @@ The notebook is divided into 3 parts:
 	- Hyper parameter tuning.
 	- Prediction and inferences.
 <h4>Part 2: Deployment.</h4>
-1. model.py: It mostly is the subpart of Boombikes Prediction model.ipynb having the code where model is built and trained. At the end the object of the trained model is saved in the memory of a pickle package.
+1. model.py: It mostly is the subpart of Boombikes Prediction model.ipynb having the code where model is built and trained. At the end the object of the trained model is saved in the memory of a pickle package.<br>
 2. app.py: It contains the code of my flask app. Flask is a micro web framework written in Python. 
 Basic flow of the app:
